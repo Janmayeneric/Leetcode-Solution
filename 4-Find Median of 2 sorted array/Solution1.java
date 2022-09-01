@@ -1,6 +1,19 @@
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        /**
+        *   This is a very complicated way to find the solution
+        *   The performance is not good, and memory allocation is bad too
+        *   the basic idea is find the median of two array, and keep two sides of both array
+        *   balanced
+        *   The problem is that the boundary case is so many .................
+        *   
+        *
+        * -------------------------Overview-------------------------------------
+        *    RunTime: 8ms
+        *    Memroy: 51.5MB
+        */
         
+        // first boundary case, when one or both array is zero
         if(nums1.length == 0 || nums2.length == 0){
             int[] res = nums1.length == 0? nums2:nums1;
             
@@ -16,11 +29,9 @@ class Solution {
             }
         }
         
-        // ----------------------------------------------------------
+        // Make sure the long and short array
         int[] arrL = new int[0];
         int[] arrS = new int[0];
-        
-        
         if(nums1.length > nums2.length){
             arrL = nums1;
             arrS = nums2;
@@ -28,6 +39,7 @@ class Solution {
             arrL = nums2;
             arrS = nums1;
         }
+        
         
         boolean isEvenL = (arrL.length % 2 == 0);
         boolean isEvenS = (arrS.length % 2 == 0);
