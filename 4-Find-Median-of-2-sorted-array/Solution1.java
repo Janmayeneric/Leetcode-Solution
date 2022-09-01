@@ -9,8 +9,8 @@ class Solution {
         *   
         *
         * -------------------------Overview-------------------------------------
-        *    RunTime: 8ms
-        *    Memroy: 51.5MB
+        *    RunTime: 8ms(24.62%)
+        *    Memroy: 51.5MB(7.45%)
         */
         
         // first boundary case, when one or both array is zero

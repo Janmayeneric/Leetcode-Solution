@@ -4,8 +4,8 @@ class Solution {
     *
     *
     * -------------------------OverView 
-    *  Time: 11ms
-    *  Memory: 51.2MB
+    *  Time: 11ms(17.54%)
+    *  Memory: 51.2MB(9.52%)
     */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         List<Integer> list = new ArrayList<Integer>();
